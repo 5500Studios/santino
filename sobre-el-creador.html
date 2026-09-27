@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Santino · 5500's Studios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E1210;
+    --surface: #171D1A;
+    --text: #EAE7E0;
+    --muted: #9BA39C;
+    --accent: #45D9A0;
+    --accent-dim: #2A6E58;
+    --rule: #2A322E;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #F4F2EC;
+      --surface: #FFFFFF;
+      --text: #1B211D;
+      --muted: #5C645E;
+      --accent: #1E8F6A;
+      --accent-dim: #BFE6D7;
+      --rule: #DDD9CE;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0E1210; --surface: #171D1A; --text: #EAE7E0; --muted: #9BA39C;
+    --accent: #45D9A0; --accent-dim: #2A6E58; --rule: #2A322E;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 5rem;
+  }
+  .kicker {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 0 0 0.6rem;
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: clamp(2.2rem, 7vw, 3.1rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 2.6rem;
+    color: var(--text);
+  }
+  .role {
+    font-size: 1.08rem;
+    color: var(--muted);
+    max-width: 46ch;
+    margin: 0 0 3.2rem;
+    padding-bottom: 2.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .role strong { color: var(--text); font-weight: 600; }
+  p {
+    font-size: 1.05rem;
+    color: var(--text);
+    max-width: 62ch;
+    margin: 0 0 1.5rem;
+  }
+  .timeline {
+    margin: 2.8rem 0;
+    padding: 0;
+    display: grid;
+    gap: 1.4rem;
+  }
+  .entry {
+    display: grid;
+    grid-template-columns: 3.6rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+  }
+  .entry .year {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--accent);
+  }
+  .entry p { margin: 0; font-size: 1rem; }
+  blockquote {
+    margin: 3rem 0;
+    padding: 1.6rem 1.8rem;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 2px;
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 0.9rem;
+    font-family: "Source Sans 3", sans-serif;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Escrito por Santino para su propio estudio, 5500's Studios.</p>
+  <h1>Sobre el Creador</h1>
+
+  <p class="role"><strong>Santino</strong> es un creador digital, desarrollador y fundador de 5500&rsquo;s Studios, un estudio independiente orientado a la tecnología, los videojuegos y la creación de experiencias digitales.</p>
+
+  <p>Desde temprana edad comenzó a explorar el mundo de la tecnología y el desarrollo, desarrollando un interés particular por la programación, el diseño y los videojuegos. A través de distintos proyectos fue adquiriendo experiencia en diferentes herramientas y plataformas, con especial participación en el ecosistema de Roblox.</p>
+
+  <p>En el ámbito del desarrollo de videojuegos, trabajó en proyectos como <em>Call of Blox</em>, una experiencia de acción desarrollada en Roblox, además de experimentar con nuevas ideas relacionadas con jugabilidad, programación, diseño y ambientación.</p>
+
+  <p>Su trabajo también se extendió al ámbito educativo y ambiental, con dos participaciones consecutivas en iniciativas vinculadas a Escuelas Verdes, programa del Gobierno de la Ciudad de Buenos Aires orientado a promover la educación ambiental y la sustentabilidad en las instituciones educativas.</p>
+
+  <div class="timeline">
+    <div class="entry">
+      <span class="year">2025</span>
+      <p>Desarrolló un juego educativo en Roblox centrado en el cuidado del agua, utilizado en una actividad con alumnos de 6.º grado de nivel primario para abordar distintas maneras de preservar este recurso tanto en la escuela como en la vida cotidiana.</p>
+    </div>
+    <div class="entry">
+      <span class="year">2026</span>
+      <p>Desarrolló una página web interactiva basada en una trivia sobre reciclaje, presentada a estudiantes de 6.º grado del Limerick Bilingual School Argentina, quienes participaron respondiendo las preguntas de manera conjunta.</p>
+    </div>
+  </div>
+
+  <p>Además del desarrollo de videojuegos, Santino ha trabajado en proyectos vinculados con sitios web, software, inteligencia artificial y diseño digital. En sus proyectos busca combinar creatividad y tecnología para transformar ideas en experiencias concretas.</p>
+
+  <blockquote>
+    &laquo;Siempre que puedo intento colaborar y voy a seguir intentándolo siempre que se me dé la oportunidad.&raquo;
+    <cite>Santino, sobre su participación en proyectos educativos y ambientales</cite>
+  </blockquote>
+
+  <p>En 2025 fundó 5500&rsquo;s Studios, desde donde continúa desarrollando proyectos independientes y explorando nuevas formas de utilizar la tecnología como herramienta para crear, aprender y experimentar.</p>
+
+  <footer>5500&rsquo;s Studios</footer>
+</div>
+</body>
+</html>
